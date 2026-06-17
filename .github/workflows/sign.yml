@@ -30,8 +30,9 @@ jobs:
       - name: Submit Signing Request
         uses: signpath/github-action-submit-signing-request@v2
         with:
-          api-token: '${{ secrets.SIGNPATH_API_TOKEN }}'
-          organization-id: '${{ vars.SIGNPATH_ORGANIZATION_ID }}'
+          connector-url: https://pipelineconnector-qa1.connectors.dev.signpath.io:15001/GitHub/GitHubCom
+          api-token: '${{ secrets.SIGNPATH_QA1_API_TOKEN }}'
+          organization-id: '${{ vars.SIGNPATH_QA1_ORGANIZATION_ID }}'
           project-slug: 'executable'
           signing-policy-slug:  'release-signing'
           github-artifact-id:  "${{steps.upload-unsigned-artifact.outputs.artifact-id}}"
