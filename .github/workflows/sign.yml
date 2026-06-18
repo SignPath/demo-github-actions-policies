@@ -30,7 +30,7 @@ jobs:
       - name: Submit Signing Request
         uses: signpath/github-action-submit-signing-request@v2
         with:
-          connector-url: https://pipelineconnector-qa1.connectors.dev.signpath.io:15001/GitHub/GitHubCom
+          connector-url: https://pipelineconnector-qa1.connectors.dev.signpath.io:15001/GitHubActions/GitHubCom
           api-token: '${{ secrets.SIGNPATH_QA1_API_TOKEN }}'
           organization-id: '${{ vars.SIGNPATH_QA1_ORGANIZATION_ID }}'
           project-slug: 'executable'
