@@ -1,6 +1,6 @@
 # This is a policy file for the project 'executable' and the signing policy 'release-signing'
 
-github-policies:
+github-build-policies:
   runners:
     allowed_groups:
       - 'GitHub Actions'                                       # all jobs need to run on GitHub-hosted runners
